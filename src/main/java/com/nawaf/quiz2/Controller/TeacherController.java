@@ -83,7 +83,7 @@ public class TeacherController {
 
     @GetMapping("/get-list-salary/{salary}")
     public ResponseEntity<?> getAllTeachersBySalaryEqualOrAbove(@PathVariable double salary){
-        if(salary < 0) return ResponseEntity
+        if(salary <= 0) return ResponseEntity
                 .status(400)
                 .body(new ApiResponse("Salary must be positive number"));
 
