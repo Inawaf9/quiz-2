@@ -93,6 +93,4 @@ public class StudentController {
                 .status(200)
                 .body(studentListByMajor);
     }
-
-
 }
